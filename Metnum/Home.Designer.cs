@@ -47,6 +47,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btUlang = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.lblHasil = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -244,6 +245,7 @@
             this.panel3.AutoScroll = true;
             this.panel3.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.panel3.Controls.Add(this.lblHasil);
+            this.panel3.Controls.Add(this.btUlang);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -251,24 +253,35 @@
             this.panel3.Size = new System.Drawing.Size(181, 311);
             this.panel3.TabIndex = 2;
             // 
+            // btUlang
+            // 
+            this.btUlang.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btUlang.Location = new System.Drawing.Point(64, 278);
+            this.btUlang.Name = "btUlang";
+            this.btUlang.Size = new System.Drawing.Size(60, 26);
+            this.btUlang.TabIndex = 17;
+            this.btUlang.Text = "Ulang";
+            this.btUlang.UseVisualStyleBackColor = true;
+            this.btUlang.Click += new System.EventHandler(this.btUlang_Click);
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(6, 126);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(39, 27);
+            this.label8.Size = new System.Drawing.Size(34, 27);
             this.label8.TabIndex = 17;
-            this.label8.Text = "I = ";
+            this.label8.Text = "I =";
             // 
             // lblHasil
             // 
-            this.lblHasil.AutoSize = true;
             this.lblHasil.Font = new System.Drawing.Font("Calibri", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHasil.Location = new System.Drawing.Point(36, 126);
+            this.lblHasil.Location = new System.Drawing.Point(35, 126);
             this.lblHasil.Name = "lblHasil";
-            this.lblHasil.Size = new System.Drawing.Size(0, 27);
+            this.lblHasil.Size = new System.Drawing.Size(134, 141);
             this.lblHasil.TabIndex = 18;
+            this.lblHasil.Text = "hasil";
             // 
             // Home
             // 
@@ -278,6 +291,7 @@
             this.ClientSize = new System.Drawing.Size(444, 311);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.MaximizeBox = false;
             this.Name = "Home";
             this.Text = "Program M-Trapezoidal";
             this.panel1.ResumeLayout(false);
@@ -312,6 +326,7 @@
         private System.Windows.Forms.Button btHitung;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btUlang;
         private System.Windows.Forms.Label lblHasil;
     }
 }

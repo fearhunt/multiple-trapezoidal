@@ -19,8 +19,8 @@ namespace Metnum
             panel3.Visible = false;
         }
 
-        public int a, b, pangkat, range; // a dan b sebagai batas fungsi. pangkat sebagai pangkat tertinggi di f(x). d sebagai indeks di btHitung
-        public double h;
+        public int pangkat; 
+        public double a, b, h, range;// a dan b sebagai batas fungsi. pangkat sebagai pangkat tertinggi di f(x). d sebagai indeks di btHitung
 
         public void btAct_Click(object sender, EventArgs e)
         {
@@ -30,8 +30,8 @@ namespace Metnum
             }
             else
             {
-                a = Convert.ToInt32(tbA.Text);
-                b = Convert.ToInt32(tbB.Text);
+                a = Double.Parse(tbA.Text);
+                b = Double.Parse(tbB.Text);
                 h = Double.Parse(tbH.Text);
                 pangkat = Convert.ToInt32(tbExp.Text); 
 
@@ -75,7 +75,7 @@ namespace Metnum
 
         private void btHitung_Click(object sender, EventArgs e)
         {
-            int[] koef = new int[pangkat + 1];
+            double[] koef = new double[pangkat + 1];
             int i;
             string str;
 
@@ -89,7 +89,7 @@ namespace Metnum
                     break;
                 }
                 else
-                    koef[i] = Convert.ToInt32(str);
+                    koef[i] = Double.Parse(str);
             }
 
             if (i == pangkat + 1)
@@ -98,6 +98,12 @@ namespace Metnum
                 function.Text = Function(koef);
                 btHitung.Enabled = false;
             }
+        }
+
+        private void btUlang_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Environment.Exit(0);
         }
 
         int topLoc = 1; // untuk indeks posisi label dan textBox
@@ -134,11 +140,9 @@ namespace Metnum
             txt.Top = topLoc * 10;
             txt.Left = 30;
             txt.Name = "tbData" + i;
-            //txt.Text = txt.Name;
             topLoc += 3;
             return txt;
         }
-        //this.Controls["label" + (i + 1).ToString()].Text = name[i];
 
         public string Function()
         {
@@ -159,7 +163,7 @@ namespace Metnum
             return Temp;
         }
 
-        public string Function(int[] koef)
+        public string Function(double[] koef)
         {
             string char_temp;
 
@@ -172,18 +176,39 @@ namespace Metnum
                     continue;
                 else
                 {
-                    char_temp = Convert.ToString(koef[pangkat - i]);
-                    string temp = char_temp + "x^" + i + " + ";
+                    if (koef[pangkat - i] < 0)
+                    {
+                        Temp += "(";
+                    }
 
+                    char_temp = Convert.ToString(koef[pangkat - i]);
+                    string temp = char_temp + "x^" + i;
+
+                    if (koef[pangkat - i] < 0)
+                    {
+                        temp += ")";
+                    }
+
+                    if (i > 1)
+                        temp += " + ";
                     Temp += temp;
                 }
             }
+
+            if (koef[pangkat] == 0)
+                return Temp;
+            else if (koef[pangkat] < 0)
+                Temp += " + (";
+
             char_temp = Convert.ToString(koef[pangkat]);
             Temp += char_temp;
+
+            if (koef[pangkat] < 0)
+                Temp += ")";
             return Temp;
         }
 
-        public void Count(int[] koef)
+        public void Count(double[] koef)
         {
             double I = (h / 2.0), num1, num2, sum_temp = 0;
 
