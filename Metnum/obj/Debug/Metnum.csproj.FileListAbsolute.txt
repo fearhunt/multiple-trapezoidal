@@ -1,0 +1,20 @@
+D:\firhan\kuliah\Metnum\Metnum\bin\Debug\Metnum.exe.config
+D:\firhan\kuliah\Metnum\Metnum\bin\Debug\Metnum.exe
+D:\firhan\kuliah\Metnum\Metnum\bin\Debug\Metnum.pdb
+D:\firhan\kuliah\Metnum\Metnum\obj\Debug\Metnum.csprojAssemblyReference.cache
+D:\firhan\kuliah\Metnum\Metnum\obj\Debug\Metnum.Home.resources
+D:\firhan\kuliah\Metnum\Metnum\obj\Debug\Metnum.Properties.Resources.resources
+D:\firhan\kuliah\Metnum\Metnum\obj\Debug\Metnum.csproj.GenerateResource.cache
+D:\firhan\kuliah\Metnum\Metnum\obj\Debug\Metnum.csproj.CoreCompileInputs.cache
+D:\firhan\kuliah\Metnum\Metnum\obj\Debug\Metnum.exe
+D:\firhan\kuliah\Metnum\Metnum\obj\Debug\Metnum.pdb
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\bin\Debug\Metnum.exe.config
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\bin\Debug\Metnum.exe
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\bin\Debug\Metnum.pdb
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\obj\Debug\Metnum.csprojAssemblyReference.cache
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\obj\Debug\Metnum.Home.resources
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\obj\Debug\Metnum.Properties.Resources.resources
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\obj\Debug\Metnum.csproj.GenerateResource.cache
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\obj\Debug\Metnum.csproj.CoreCompileInputs.cache
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\obj\Debug\Metnum.exe
+D:\Kuliah\UGM\Semester II\Metode Numeris\Metnum\Metnum\obj\Debug\Metnum.pdb
